@@ -1,16 +1,42 @@
-<html>
+<!DOCTYPE html>
+<html lang="it">
+
     <head>
-        <link rel="stylesheet" href="index.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Imprecation Counter</title>
+    
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    
     </head>
     <body>
+        <div class="container">
+
+    <header class="panel">
         <h1>Imprecations:</h1>
         <h2 id="count-num">0</h2>
-        <div class="buttons">
-        <button id="decrement-btn" onclick="decrement()">DECREMENT</button>
-        <button id="increment-btn" onclick="increment()">INCREMENT</button>
+    </header>
+
+    <main>
+        <div class="dec-inc-buttons">
+        <button id="decrement-btn">DECREMENT</button>
+        <button id="increment-btn">INCREMENT</button>
     </div>
-        <button id="save-btn" onclick="save()">SAVE</button>
-        <p id="save-el">Previous inprecations: </p>
+    <div class="save-button">
+        <button id="save-btn">SAVE</button>
+    </div>
+        <div id="save-el" class="panel">Previous imprecations: </div>
+        <div class="reset-button">
+            <button id="reset-btn">RESET</button>
+        </div>
+    </main>
+</div>
         <script src="index.js"></script>
     </body>
 

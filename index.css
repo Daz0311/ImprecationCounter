@@ -1,11 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto;
+    max-width: 80%;
+}
+
+.panel {
+    margin: 16px;
+    padding: 16px;
+    border-radius: 16px;
+    border: 3px solid rgba(0, 0, 0, 0.089);
+    background-color: rgba(212, 129, 245, 0.377);
+}
+
+
 body {
-    background-image: url("kermit.jpg");
+    background-image: url("images/heaven.jpg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     text-align: center;
 }
+
 
 h1 {
     margin-top: 10px;
@@ -20,16 +45,16 @@ h2 {
 
 button {
     border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding:  15px 0 15px 0;
     color: white;
     font-weight: bold;
-    width: 200px;
+    width: 130px;
     margin-bottom: 15px;
     border-radius: 5px;
+    border: 1px solid rgba(14, 13, 13, 0.055);
 }
 
-.buttons {
+.dec-inc-buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -38,13 +63,18 @@ button {
 
 
 #increment-btn {
-    background: darkgreen;
+    background: rgb(5, 179, 5);
 }
 
 #decrement-btn {
-    background: darkred;
+    background: rgb(247, 100, 55);
 }
 
 #save-btn{
-    background: darkgoldenrod;
+    background: rgb(202, 155, 229);
+}
+
+#reset-btn{
+    margin-top: 50px;
+    background: rgb(177, 9, 9);
 }
